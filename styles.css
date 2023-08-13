@@ -64,7 +64,7 @@ body {
   margin-bottom: 2.5em;
 }
 
-.listContainer li {
+.listItem {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,6 +80,11 @@ body {
 
 .listContainer li:hover {
   background: var(--Orange);
+  color: var(--White);
+}
+
+.selected {
+  background: var(--Medium-Grey);
   color: var(--White);
 }
 
