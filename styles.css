@@ -78,9 +78,11 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.listContainer li:hover {
-  background: var(--Orange);
-  color: var(--White);
+@media (min-width: 600px) {
+  .listContainer li:hover {
+    background: var(--Orange);
+    color: var(--White);
+  }
 }
 
 .selected {
