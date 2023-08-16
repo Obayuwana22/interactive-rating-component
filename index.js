@@ -3,7 +3,6 @@ let ratingNumbers = document.querySelectorAll(".listItem");
 let rating = document.querySelector("#rating");
 let appreciation = document.querySelector("#appreciation");
 let passInRatedValue = document.querySelector("#ratedValue");
-let choosen = document.querySelector("#choose").value;
 
 function run() {
   let selectedValue = null;
