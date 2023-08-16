@@ -2,11 +2,22 @@ let submit = document.querySelector("#submit").addEventListener("click", run);
 let ratingNumbers = document.querySelectorAll(".listItem");
 let rating = document.querySelector("#rating");
 let appreciation = document.querySelector("#appreciation");
-let selectedValue = document.querySelector("#selectedValue");
+let passInRatedValue = document.querySelector("#ratedValue");
+let choosen = document.querySelector("#choose").value;
 
 function run() {
-  rating.classList.add("hidden");
-  appreciation.classList.toggle("hidden");
+  let selectedValue = null;
+  ratingNumbers.forEach(function (check) {
+    if (check.classList.contains("selected")) {
+      selectedValue = check.textContent;
+    }
+  });
+
+  if (selectedValue !== null) {
+    rating.classList.add("hidden");
+    appreciation.classList.toggle("hidden");
+    passInRatedValue.textContent = selectedValue;
+  }
 }
 
 function removeSelectedClass() {

@@ -23,7 +23,9 @@
           is appreciated to help us improve our offering!
         </p>
         <ol class="listContainer">
-          <li class="listItem" onclick="toggleSelection(this)">1</li>
+          <li id="choose" class="listItem" onclick="toggleSelection(this)">
+            1
+          </li>
           <li class="listItem" onclick="toggleSelection(this)">2</li>
           <li class="listItem" onclick="toggleSelection(this)">3</li>
           <li class="listItem" onclick="toggleSelection(this)">4</li>
@@ -38,7 +40,7 @@
           alt="transaction device"
         />
         <span class="ratingScore"
-          >You selected <span id="selectedValue"></span> out of 5</span
+          >You selected <span id="ratedValue"></span> out of 5</span
         >
         <h2 class="appreciationHeading">Thank You!</h2>
         <p class="appreciationParagraph">
