@@ -19,7 +19,7 @@ function run() {
   }
 }
 
-function removeSelectedClass() {
+function removeSelectedClassValue() {
   ratingNumbers.forEach(function (rate) {
     if (rate.classList.contains("selected")) {
       rate.classList.remove("selected");
@@ -27,7 +27,7 @@ function removeSelectedClass() {
   });
 }
 
-function toggleSelection(element) {
-  removeSelectedClass();
+function toggleSelectedValue(element) {
+  removeSelectedClassValue();
   element.classList.toggle("selected");
 }
